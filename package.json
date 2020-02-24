@@ -1,0 +1,28 @@
+{
+  "name": "ps-redux",
+  "description": "React and Redux Pluralsight course by Cory House",
+  "scripts": {
+    "start-watch": "parcel ./src/index.html",
+    "prestart:api": "node tools/createMockDb.js",
+    "start:api": "node tools/apiServer.js",
+    "dev": "(start npm run start-watch && start npm run start:api) || (npm run start-watch & npm run start:api)",
+    "start": "npm run dev"
+  },
+  "dependencies": {
+    "babel-preset-react": "^6.24.1",
+    "json-server": "^0.16.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-redux": "^7.2.0",
+    "react-router-dom": "^5.1.2",
+    "redux": "^4.0.5",
+    "redux-immutable-state-invariant": "^2.1.0",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "parcel-bundler": "^1.12.4",
+    "rollup": "^1.31.1",
+    "rollup-plugin-babel": "^4.3.3"
+  }
+}
